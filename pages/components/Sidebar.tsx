@@ -100,7 +100,9 @@ export const NavItem = ({ path, label, icon, expanded }: NavItemProps) => {
 					<span>{label}</span>
 				</>
 			) : (
-				<Tooltip content={label}>{icon}</Tooltip>
+				<Tooltip placement="right" content={label}>
+					{icon}
+				</Tooltip>
 			)}
 		</NavItemContainer>
 	);
