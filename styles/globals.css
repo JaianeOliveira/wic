@@ -5,3 +5,25 @@
 .text-shadow {
 	text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
 }
+
+.home-grid {
+	grid-template-areas:
+		'chart chart newCheckpoint'
+		'day todo newCheckpoint';
+}
+
+.chart-area {
+	grid-area: 'chart';
+}
+
+.new-checkpoint-area {
+	grid-area: 'newCheckpoint';
+}
+
+.day-area {
+	grid-area: 'day';
+}
+
+.todo-area {
+	grid-area: 'todo';
+}

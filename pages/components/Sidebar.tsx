@@ -27,7 +27,7 @@ type NavItemListItem = {
 export const Container = w.div(
 	`
     h-full 
-    bg-neutral-700 
+    bg-neutral-800 
     shadow-lg 
     flex
     flex-col 
@@ -54,11 +54,12 @@ export const Logo = w.h1(
     font-light
     text-amber-400 
     text-shadow
+	transition-all
     `
 );
 
 export const NavItemContainer = w(Link, {
-	className: 'py-3 flex gap-2 items-center font-thin',
+	className: 'py-3 flex gap-2 items-center font-thin transition-all',
 	variants: {
 		active: (isActive: boolean) =>
 			isActive ? 'text-amber-400' : 'text-neutral-100',
@@ -72,7 +73,7 @@ export const ExpandButton = w.button(
 	`
 	bg-amber-500
 	p-2
-	text-neutral-700
+	text-neutral-800
 	rounded-lg
 	shadow-sm
 	transition-all

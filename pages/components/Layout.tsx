@@ -14,7 +14,7 @@ type LayoutProps = {
 };
 
 const Container = w.div(`
-    flex bg-neutral-800 w-full h-[100vh] text-neutral-100 
+    flex bg-neutral-900 w-full h-[100vh] text-neutral-100 
 `);
 
 const Header = w.header(`
@@ -32,7 +32,8 @@ const Header = w.header(`
 const Content = w.div(`
 	pr-[6vw]
 	pl-[2vw]
-	py-4
+	pb-4
+	h-[90%]
 `);
 
 const Main = w.main(`
