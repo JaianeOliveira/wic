@@ -1,10 +1,4 @@
-import {
-	Menu,
-	MenuHandler,
-	MenuItem,
-	MenuList,
-} from '@material-tailwind/react';
-import { SignOut, User } from 'phosphor-react';
+import { User } from 'phosphor-react';
 import { ReactNode } from 'react';
 import { w } from 'windstitch';
 import Sidebar from '../Sidebar';
@@ -66,28 +60,7 @@ const Layout = ({ children }: LayoutProps) => {
 		<Container>
 			<Sidebar />
 			<Main>
-				<Header>
-					Jaiane Oliveira
-					<Menu placement="bottom-end">
-						<MenuHandler>
-							<Avatar />
-						</MenuHandler>
-						<MenuList>
-							<MenuItem>
-								<span className="flex gap-2">
-									<User size={20} weight="bold" />
-									Ver perfil
-								</span>
-							</MenuItem>
-							<MenuItem>
-								<span className="flex gap-2">
-									<SignOut size={20} weight="bold" />
-									Sair
-								</span>
-							</MenuItem>
-						</MenuList>
-					</Menu>
-				</Header>
+				<Header>Jaiane Oliveira</Header>
 				<Content>{children}</Content>
 			</Main>
 		</Container>

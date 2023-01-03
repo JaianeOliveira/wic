@@ -1,4 +1,3 @@
-import { Tooltip } from '@material-tailwind/react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import {
@@ -93,9 +92,7 @@ export const NavItem = ({ path, label, icon, expanded }: NavItemProps) => {
 					<span>{label}</span>
 				</>
 			) : (
-				<Tooltip placement="right" content={label}>
-					{icon}
-				</Tooltip>
+				icon
 			)}
 		</NavItemContainer>
 	);

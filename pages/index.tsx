@@ -1,4 +1,3 @@
-import { Button } from '@material-tailwind/react';
 import { useState } from 'react';
 import { w } from 'windstitch';
 import Card from '../components/Card';
@@ -25,7 +24,7 @@ const Home = () => {
 				</Card>
 				<Card className="row-span-2" title="Novo Checkpoint">
 					<Timer started={timerStarted} />
-					<Button onClick={() => setTimerStarted(!timerStarted)}>Start</Button>
+					<button onClick={() => setTimerStarted(!timerStarted)}>Start</button>
 				</Card>
 				<Card title="Resumo do dia">chart</Card>
 				<Card title="To do">chart</Card>
