@@ -7,7 +7,7 @@ import {
 import { SignOut, User } from 'phosphor-react';
 import { ReactNode } from 'react';
 import { w } from 'windstitch';
-import Sidebar from './Sidebar';
+import Sidebar from '../Sidebar';
 
 type LayoutProps = {
 	children: ReactNode | string;

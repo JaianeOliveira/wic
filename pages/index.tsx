@@ -1,9 +1,9 @@
 import { Button } from '@material-tailwind/react';
 import { useState } from 'react';
 import { w } from 'windstitch';
-import Card from './components/Card';
-import Layout from './components/Layout';
-import Timer from './components/Timer';
+import Card from '../components/Card';
+import Layout from '../components/Layout/Main';
+import Timer from '../components/Timer';
 
 const Grid = w.div(`
 	h-full

@@ -10,6 +10,7 @@ import {
 } from 'phosphor-react';
 import { useState } from 'react';
 import { w } from 'windstitch';
+import Logo from './Logo';
 
 type NavItemProps = {
 	path: string;
@@ -47,15 +48,6 @@ export const Container = w.div(
 			expanded: false,
 		},
 	}
-);
-
-export const Logo = w.h1(
-	`
-    font-light
-    text-amber-400 
-    text-shadow
-	transition-all
-    `
 );
 
 export const NavItemContainer = w(Link, {
@@ -128,7 +120,7 @@ const Sidebar = () => {
 	return (
 		<Container expanded={isExpanded}>
 			<Link href="/">
-				<Logo>WIC</Logo>
+				<Logo />
 			</Link>
 
 			<nav className="gap-2 h-full">
