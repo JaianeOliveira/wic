@@ -50,7 +50,7 @@ export const Container = w.div(
 );
 
 export const NavItemContainer = w(Link, {
-	className: 'py-3 flex gap-2 items-center font-thin transition-all',
+	className: 'py-3 flex gap-2 items-center font-light text-base transition-all',
 	variants: {
 		active: (isActive: boolean) =>
 			isActive ? 'text-amber-400' : 'text-neutral-100',
