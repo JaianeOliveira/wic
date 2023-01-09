@@ -1,4 +1,5 @@
 # WIC
+![](https://img.shields.io/badge/status-em%20desenvolvimento-blue)
 
 Monitore seus commits enquanto programa e tenha o resumo deles de forma fácil.
 
